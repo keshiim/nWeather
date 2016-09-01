@@ -73,7 +73,7 @@
     self.pressButton.layer.borderWidth  = 0.5f;
     self.pressButton.animationColor     = [UIColor blackColor];
     self.pressButton.animationWidth     = Width - 110;
-    self.pressButton.text               = @"Long Press To Update";
+    self.pressButton.text               = @"长按更新";
     self.pressButton.center             = self.center;
     self.pressButton.y                  = self.height - 60;
     self.pressButton.delegate           = self;
