@@ -33,6 +33,7 @@
 @property (nonatomic, strong) CurrentConditions   *weatherConditions;
 
 - (void)changeCityName:(NSString *)name;
+@property (nonatomic, strong) NSString *locationCity;
 
 /**
  *  显示动画

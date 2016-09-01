@@ -215,7 +215,7 @@
         self.updateHourLabel.textAlignment = NSTextAlignmentRight;
         self.updateHourLabel.text = @"13:20 update";
         self.updateHourLabel.textColor = [UIColor whiteColor];
-        self.updateHourLabel.font = [UIFont fontWithName:LATO_LIGHT size:14];
+        self.updateHourLabel.font = [UIFont fontWithName:LATO_LIGHT size:13];
         
     } else if (iPhone6_6sPlus) {
         
@@ -223,7 +223,7 @@
         self.updateHourLabel.textAlignment = NSTextAlignmentRight;
         self.updateHourLabel.text = @"13:20 update";
         self.updateHourLabel.textColor = [UIColor whiteColor];
-        self.updateHourLabel.font = [UIFont fontWithName:LATO_LIGHT size:14];
+        self.updateHourLabel.font = [UIFont fontWithName:LATO_LIGHT size:13];
         
     } else {
         
@@ -247,25 +247,25 @@
         
         self.cityNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(12, 16, Width - 10, 40)];
         self.cityNameLabel.text = @"San Francisco";
-        self.cityNameLabel.font = [UIFont fontWithName:LATO_REGULAR size:26.f];
+        self.cityNameLabel.font = [UIFont fontWithName:LATO_REGULAR size:16.f];
 
     } else if (iPhone6_6s) {
         
         self.cityNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(12, 17, Width - 10, 40)];
         self.cityNameLabel.text = @"San Francisco";
-        self.cityNameLabel.font = [UIFont fontWithName:LATO_LIGHT size:30.f];
+        self.cityNameLabel.font = [UIFont fontWithName:LATO_LIGHT size:20.f];
         
     } else if (iPhone6_6sPlus) {
         
         self.cityNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(12, 17, Width - 10, 40)];
         self.cityNameLabel.text = @"San Francisco";
-        self.cityNameLabel.font = [UIFont fontWithName:LATO_LIGHT size:30.f];
+        self.cityNameLabel.font = [UIFont fontWithName:LATO_LIGHT size:20.f];
         
     } else {
         
         self.cityNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(12, 16, Width - 10, 40)];
         self.cityNameLabel.text = @"San Francisco";
-        self.cityNameLabel.font = [UIFont fontWithName:LATO_REGULAR size:26.f];
+        self.cityNameLabel.font = [UIFont fontWithName:LATO_REGULAR size:20.f];
     }
     
     [self addSubview:self.cityNameLabel];

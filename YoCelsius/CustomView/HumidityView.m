@@ -54,7 +54,7 @@
     }
         
     // 移动的头部位
-    self.titleMoveLabel = [TitleMoveLabel withText:@"Humidity"];
+    self.titleMoveLabel = [TitleMoveLabel withText:@"户外湿度"];
     [self addSubview:self.titleMoveLabel];
     
     // 完整的圆

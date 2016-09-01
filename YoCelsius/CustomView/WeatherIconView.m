@@ -41,7 +41,7 @@
  */
 - (void)buildView {
     
-    self.titleMoveLabel = [TitleMoveLabel withText:@"Weather"];
+    self.titleMoveLabel = [TitleMoveLabel withText:@"小n☞天气^_^"];
     [self addSubview:self.titleMoveLabel];
     
     self.storeValue = [CGRectStoreValue new];

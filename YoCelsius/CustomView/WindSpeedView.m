@@ -65,7 +65,7 @@
     [self addSubview:self.threeLineView];
     
     // 移动的头部位
-    self.titleMoveLabel = [TitleMoveLabel withText:@"Wind Speed"];
+    self.titleMoveLabel = [TitleMoveLabel withText:@"风速"];
     [self addSubview:self.titleMoveLabel];
     
     

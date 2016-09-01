@@ -43,31 +43,31 @@
     // 星期几
     if (iPhone4_4s || iPhone5_5s) {
         
-        self.weekDayInfoLabel               = [[UILabel alloc] initWithFrame:CGRectMake(17 + 10, 24, 100, 60)];
+        self.weekDayInfoLabel               = [[UILabel alloc] initWithFrame:CGRectMake(17 + 10, 35, 250, 60)];
         self.weekDayInfoLabel.textAlignment = NSTextAlignmentLeft;
-        self.weekDayInfoLabel.font          = [UIFont fontWithName:LATO_THIN size:28.f];
-        self.weekDayInfoLabel.text          = @"Today";
+        self.weekDayInfoLabel.font          = [UIFont fontWithName:LATO_THIN size:18.f];
+        self.weekDayInfoLabel.text          = @"星期一";
         
     } else if (iPhone6_6s) {
         
-        self.weekDayInfoLabel               = [[UILabel alloc] initWithFrame:CGRectMake(17 + 10, 24, 100, 60)];
+        self.weekDayInfoLabel               = [[UILabel alloc] initWithFrame:CGRectMake(17 + 10, 35, 250, 60)];
         self.weekDayInfoLabel.textAlignment = NSTextAlignmentLeft;
-        self.weekDayInfoLabel.font          = [UIFont fontWithName:LATO_THIN size:34.f];
-        self.weekDayInfoLabel.text          = @"Today";
+        self.weekDayInfoLabel.font          = [UIFont fontWithName:LATO_THIN size:20.f];
+        self.weekDayInfoLabel.text          = @"星期一";
         
     } else if (iPhone6_6sPlus) {
         
-        self.weekDayInfoLabel               = [[UILabel alloc] initWithFrame:CGRectMake(17 + 10, 24, 100, 60)];
+        self.weekDayInfoLabel               = [[UILabel alloc] initWithFrame:CGRectMake(17 + 10, 35, 250, 60)];
         self.weekDayInfoLabel.textAlignment = NSTextAlignmentLeft;
-        self.weekDayInfoLabel.font          = [UIFont fontWithName:LATO_THIN size:40.f];
-        self.weekDayInfoLabel.text          = @"Today";
+        self.weekDayInfoLabel.font          = [UIFont fontWithName:LATO_THIN size:20.f];
+        self.weekDayInfoLabel.text          = @"星期一";
         
     } else {
         
-        self.weekDayInfoLabel               = [[UILabel alloc] initWithFrame:CGRectMake(17 + 10, 24, 100, 60)];
+        self.weekDayInfoLabel               = [[UILabel alloc] initWithFrame:CGRectMake(17 + 10, 35, 250, 60)];
         self.weekDayInfoLabel.textAlignment = NSTextAlignmentLeft;
-        self.weekDayInfoLabel.font          = [UIFont fontWithName:LATO_THIN size:28.f];
-        self.weekDayInfoLabel.text          = @"Today";
+        self.weekDayInfoLabel.font          = [UIFont fontWithName:LATO_THIN size:18.f];
+        self.weekDayInfoLabel.text          = @"星期一";
     }
     
     [self.weekDayInfoLabel sizeToFit];
@@ -83,6 +83,7 @@
     UIView *dateBlackView         = [[UIView alloc] initWithFrame:CGRectMake(Width - 50, 0, 50, 12.f)];
     dateBlackView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.95];
     [dateBlackView addSubview:self.dateLabel];
+    [self addSubview:dateBlackView];
     
     // 最低温度
     if (iPhone4_4s || iPhone5_5s) {
@@ -221,11 +222,11 @@
     
     // 星期几
     [formatter setDateFormat:@"EEEE"];
-    [formatter setWeekdaySymbols:@[@"Sun", @"Mon", @"Tues", @"Wed", @"Thur", @"Fri", @"Sat"]];
+    [formatter setWeekdaySymbols:@[@"星期天", @"星期一", @"星期二", @"星期三", @"星期四", @"星期五", @"星期六"]];
     self.weekDayInfoLabel.textColor = [UIColor blackColor];
     NSString *hourStr               = [NSString stringWithFormat:@"%@", [formatter stringFromDate:utcDate]];
     self.weekDayInfoLabel.text      = hourStr;
-    if ([hourStr isEqualToString:@"Sun"]) {
+    if ([hourStr isEqualToString:@"星期天"]) {
         
         self.weekDayInfoLabel.textColor = [UIColor redColor];
         

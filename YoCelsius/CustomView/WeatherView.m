@@ -297,7 +297,7 @@
     if (scrollView.contentOffset.y >= 60.f) {
         
         if (_delegate && [_delegate respondsToSelector:@selector(pullUpEventWithData:)] && self.weatherConditions) {
-            
+            self.weatherConditions.city.name = self.locationCity;
             [_delegate pullUpEventWithData:self.weatherConditions];
             scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
 

@@ -46,7 +46,7 @@
  */
 - (void)buildView {
     
-    self.movetitleLabel = [TitleMoveLabel withText:@"Sunrise/Sunset"];
+    self.movetitleLabel = [TitleMoveLabel withText:@"日出/日落"];
     [self.movetitleLabel buildView];
     [self addSubview:self.movetitleLabel];
     

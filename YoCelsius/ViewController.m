@@ -34,6 +34,7 @@
 @property (nonatomic)         BOOL                  firstTimeLoadingData;
 @property (nonatomic, strong) CurrentWeatherData   *data;
 @property (nonatomic, strong) CLGeocoder           *geocoder;
+@property (nonatomic, strong) NSString             *cityRegion;
 @end
 
 @implementation ViewController
@@ -192,7 +193,9 @@
         CLPlacemark *placemark = [placemarks firstObject];
     
         NSLog(@"详细信息:%@", placemark.addressDictionary);
-        [self.weatherView changeCityName:placemark.subLocality];
+        self.cityRegion = [NSString stringWithFormat:@"%@ %@", placemark.locality, placemark.subLocality];
+        [self.weatherView changeCityName:self.cityRegion];
+        self.weatherView.locationCity = self.cityRegion;
     }];
 }
 

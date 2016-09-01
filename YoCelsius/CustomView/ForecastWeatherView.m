@@ -67,7 +67,7 @@
     [self.countryCodeBackgroundView addSubview:self.countryCodeLabel];
     
     self.forecastLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.countryCodeBackgroundView.x + 50, self.countryCodeBackgroundView.y, 0, 0)];
-    self.forecastLabel.text      = @"Weather Forecast";
+    self.forecastLabel.text      = @"小n啊，这是后14天的天气哦❤️";
     self.forecastLabel.font      = [UIFont fontWithName:LATO_LIGHT size:LATO_16];
     self.forecastLabel.textColor = [UIColor blackColor];
     [self.forecastLabel sizeToFit];
@@ -78,28 +78,28 @@
         self.cityNameLabel      = [[UILabel alloc] initWithFrame:CGRectMake(self.countryCodeBackgroundView.x,
                                                                             self.countryCodeBackgroundView.x + 30, 0, 0)];
         self.cityNameLabel.text = @"";
-        self.cityNameLabel.font = [UIFont fontWithName:LATO_REGULAR size:24];
+        self.cityNameLabel.font = [UIFont fontWithName:LATO_REGULAR size:16];
         
     } else if (iPhone6_6s) {
         
         self.cityNameLabel      = [[UILabel alloc] initWithFrame:CGRectMake(self.countryCodeBackgroundView.x,
                                                                             self.countryCodeBackgroundView.x + 30, 0, 0)];
         self.cityNameLabel.text = @"";
-        self.cityNameLabel.font = [UIFont fontWithName:LATO_THIN size:40];
+        self.cityNameLabel.font = [UIFont fontWithName:LATO_THIN size:25];
         
     } else if (iPhone6_6sPlus) {
         
         self.cityNameLabel      = [[UILabel alloc] initWithFrame:CGRectMake(self.countryCodeBackgroundView.x,
                                                                             self.countryCodeBackgroundView.x + 30, 0, 0)];
         self.cityNameLabel.text = @"";
-        self.cityNameLabel.font = [UIFont fontWithName:LATO_LIGHT size:47.f];
+        self.cityNameLabel.font = [UIFont fontWithName:LATO_LIGHT size:27.f];
         
     } else {
         
         self.cityNameLabel      = [[UILabel alloc] initWithFrame:CGRectMake(self.countryCodeBackgroundView.x,
                                                                             self.countryCodeBackgroundView.x + 30, 0, 0)];
         self.cityNameLabel.text = @"";
-        self.cityNameLabel.font = [UIFont fontWithName:LATO_REGULAR size:24];
+        self.cityNameLabel.font = [UIFont fontWithName:LATO_REGULAR size:16];
         
     }
     

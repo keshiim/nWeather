@@ -146,7 +146,7 @@
     [self addSubview:self.maxTempView];
     [self addSubview:self.centerLineView];
     
-    self.titleMoveLabel = [TitleMoveLabel withText:@"Min/Max Temp"];
+    self.titleMoveLabel = [TitleMoveLabel withText:@"Min/Max 温度"];
     [self.titleMoveLabel buildView];
     [self addSubview:self.titleMoveLabel];
 }
