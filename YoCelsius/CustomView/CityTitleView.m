@@ -473,7 +473,7 @@
     self.updateYearLabel.text = yearStr;
     
     [formatter setDateFormat:@"hh:mm"];
-    NSString *hourStr = [NSString stringWithFormat:@"%@ 小n❤更新", [formatter stringFromDate:utcDate]];
+    NSString *hourStr = [NSString stringWithFormat:@"%@ 小n❤爱你的zmj", [formatter stringFromDate:utcDate]];
     self.updateHourLabel.text = hourStr;
 }
 
