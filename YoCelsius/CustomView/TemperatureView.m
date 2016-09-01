@@ -41,7 +41,7 @@
     self.countLabel.frame = self.countLabelStoreValue.startRect;
     
     // 标题
-    self.titleMoveLabel = [TitleMoveLabel withText:@"当前温度"];
+    self.titleMoveLabel = [TitleMoveLabel withText:@"温度(C°)"];
     [self addSubview:self.titleMoveLabel];
 }
 
