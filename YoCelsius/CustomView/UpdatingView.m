@@ -59,7 +59,7 @@
     self.label.textColor        = [UIColor whiteColor];
     self.label.textAlignment    = NSTextAlignmentCenter;
     self.label.font             = [UIFont fontWithName:LATO_LIGHT size:18.f];
-    self.label.text             = @"加载中la! 小n";
+    self.label.text             = @"加载中.. 小n!!";
     self.label.GCDTimerInterval = @(0.8f);
     self.label.glowDuration     = @(0.7f);
     self.label.glowLayerOpacity = @(1.f);
